@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александро-Невский Кафедральный Собор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const contactLink = document.querySelector('a[href="#contact"]'); // находим ссылку
+  contactLink.addEventListener('click', function(event) {
+    event.preventDefault(); // предотвращаем стандартное поведение ссылки
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' }); // плавный скроллинг
+  });
+});
+</script>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="image/pngwing.com (16).png" alt="Логотип">
+                </a>
+                <div class="header-text">
+                    <h1>Александро-Невский Кафедральный Собор</h1>
+                    <p>г. Курган</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="history.html">О соборе</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="schedule.html">Расписание служб</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="page2.html">Пожертвования</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <button id="profile-button"><a href="profile.php">Профиль</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2>Добро пожаловать в Александро-Невский Кафедральный Собор</h2>
+                    <p>Мы рады приветствовать вас в нашем соборе. Здесь вы можете найти духовное утешение, поучаствовать в богослужениях, узнать о жизни прихода и пожертвовать на развитие собора.</p>
+                    <a href="history-site.html" class="btn" style="margin-top: 20px;">Узнать больше</a>
+                </div>
+                <div class="hero-image">
+                    <img src="image/cathedral-of-st-alexander.jpg" alt="Храм" >
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <h2>Новости прихода</h2>
+                <div class="news-container">
+                    <article class="news-article">
+                        <img src="image/7f667b710c83657caff45517ad473a2d.jpg" alt="Фото новости">
+                        <h3><a href="news.html">Митрополит Даниил совершил Литургию в день всех Небесных сил бесплотных</a></h3>
+                        <p>21 ноября, в день Собора Архистратига Михаила, митрополит Курганский и Белозерский Даниил совершил Божественную литургию в курганском кафедральном соборе святого Александра Невского.</p>
+                        <a href="news.html" class="btn">Читать далее</a>
+                    </article>
+
+                    <article class="news-article">
+                        <img src="image/edccc5f3e4363becb1159a0a5b3294b8.jpg" alt="Фото новости">
+                        <h3><a href="news.html">Митрополит Даниил поздравил Святейшего Патриарха Кирилла с Днём рождения</a></h3>
+                        <p>Митрополит Курганский и Белозерский Даниил поздравил Святейшего Патриарха Московского и всея Руси Кириллу с Днём рождения. 20 ноября 2024 года Предстоятелю Русской Православной Церкви исполнилось 78 лет.</p>
+                        <a href="news.html" class="btn">Читать далее</a>
+                    </article>
+
+                    <article class="news-article">
+                        <img src="image/5d0505e973e4ca21007f7cd1e75d900a.jpg" alt="Фото новости">
+                        <h3><a href="news.html">Группа «социальных туристов» из Кургана посетила Далматовский монастырь</a></h3>
+                        <p>Самые популярные экскурсии, которые организует Государственное автономное учреждение «Центр социального обслуживания №1» в рамках реализации проекта «Социальный туризм» для людей старшего поколения – это поездки к местам культурного и духовного наследия Курганской области.                        </p>
+                        <a href="news.html" class="btn">Читать далее</a>
+                    </article>
+                </div>
+                <a href="news.html" class="btn">Все новости</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>О соборе</h2>
+                <p>Рассказ о истории, архитектуре и жизни собора. Рассказ о истории, архитектуре и жизни собора. Рассказ о истории, архитектуре и жизни собора.</p>
+                <a href="history.html" class="btn">Подробнее</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info" id="contact" style="display: block;text-align: left;">
+                <p >Адрес: <a href="#">г. Курган, ул. Володарского, 42</a></p>
+                <p >Телефон: <a href="tel:+7352460143">+7 (3524) 6-01-43</a></p>
+                <p >Email: <a href="mailto:sobor@example.com">sobor@example.com</a></p>
+            </div>
+            <div class="social-media" style="display: block;text-align: right;">
+                <a href="https://vk.com/eparhiyakurgan" target="_blank"><img style="width: 52px; height: 52px;" src="image/pngwing.com.png" alt="ВКонтакте"></a>
+                <a href="https://www.youtube.com/c/kurganvera_tv/" target="_blank"><img style="width: 52px; height: 52px;" src="image/pngwing.com (1).png" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2024 Александро-Невский Кафедральный Собор</p>
+        </div>
+    </footer>
+</body>
+</html>

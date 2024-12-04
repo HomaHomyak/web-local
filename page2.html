@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пожертвования - Александро-Невский Кафедральный Собор</title>
+    <link rel="stylesheet" href="css/donate.css">
+</head>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const contactLink = document.querySelector('a[href="#contact"]'); // находим ссылку
+  contactLink.addEventListener('click', function(event) {
+    event.preventDefault(); // предотвращаем стандартное поведение ссылки
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' }); // плавный скроллинг
+  });
+});
+</script>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="image/pngwing.com (16).png" alt="Логотип">
+                </a>
+                <div class="header-text">
+                    <h1>Александро-Невский Кафедральный Собор</h1>
+                    <p>г. Курган</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="history.html">О соборе</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="schedule.html">Расписание служб</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="page2.html">Пожертвования</a></li>
+                    </ul>
+                </nav>
+                <div class="user-action">
+                    <button id="profile-button"><a href="profile.php">Профиль</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="donation-section">
+            <div class="container">
+                <h2>Поддержать Александро-Невский Собор</h2>
+                <p>Ваше пожертвование поможет нам в поддержании храма и осуществлении благотворительной деятельности.</p>
+
+                <div class="donation-options">
+                    <h3>Способы пожертвования:</h3>
+
+                    <div class="donation-method">
+                        <h4>Онлайн-платеж</h4>
+                        <p>Быстрый и удобный способ сделать пожертвование с помощью банковской карты.</p>
+                        <form action="YOUR_PAYMENT_GATEWAY_URL" method="post">
+                            <input type="hidden" name="merchant_id" value="YOUR_MERCHANT_ID">
+                            <input type="text" name="amount" placeholder="Сумма пожертвования" required>
+                            <button type="submit">Перейти к оплате</button>
+                        </form>
+                    </div>
+
+                    <div class="donation-method">
+                        <h4>Реквизиты для банковского перевода</h4>
+                        <p>Вы можете перевести пожертвование на наш банковский счет:</p>
+                        <p><strong>Название банка:</strong> Курганское Отделение №8599 ПАО Сбербанк г.Курган</p>
+                        <p><strong>БИК:</strong> 043735650</p>
+                        <p><strong>Счет:</strong> 40703810532000100931</p>
+                        <p><strong>ИНН:</strong> 4501039863</p>
+                        <p><strong>КПП:</strong> 450101001</p>
+                        <p><strong>Назначение платежа:</strong> Пожертвование Александро-Невскому Кафедральному Собору</p>
+                        <p><strong>Примечание:</strong> Пожалуйста, укажите ваше имя и контактные данные для обратной связи.</p>
+                    </div>
+
+                    <div class="donation-method">
+                        <h4>Другие способы</h4>
+                        <p>Вы также можете сделать пожертвование наличными в храме.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="contact-info" id="contact" style="display: block;text-align: left;">
+                <p >Адрес: <a href="#">г. Курган, ул. Володарского, 42</a></p>
+                <p >Телефон: <a href="tel:+7352460143">+7 (3524) 6-01-43</a></p>
+                <p >Email: <a href="mailto:sobor@example.com">sobor@example.com</a></p>
+            </div>
+            <div class="social-media" style="display: block;text-align: right;">
+                <a href="https://vk.com/eparhiyakurgan" target="_blank"><img style="width: 52px; height: 52px;" src="image/pngwing.com.png" alt="ВКонтакте"></a>
+                <a href="https://www.youtube.com/c/kurganvera_tv/" target="_blank"><img style="width: 52px; height: 52px;" src="image/pngwing.com (1).png" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2024 Александро-Невский Кафедральный Собор</p>
+        </div>
+    </footer>
+</body>
+</html>
