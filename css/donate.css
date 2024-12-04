@@ -1,0 +1,212 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Стили для контейнера */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-left img {
+    transition: transform 0.3s;
+}
+
+.header-left img:hover{
+    transform: scale(1.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Стили для навигации */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Стили для кнопок */
+.btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004494;
+}
+
+/* Стили для основного содержимого */
+main {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.hero-image img {
+    margin-top: 10px;
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news {
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-article {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.news-article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-article h3 {
+    margin: 10px 0;
+}
+
+.about {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media img {
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+}
+
+.user-actions {
+    margin-left: 20px; 
+}
+
+#profile-button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#profile-button a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#profile-button:hover {
+    background-color: #343435; 
+}
